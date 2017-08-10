@@ -34,19 +34,33 @@
     
     var alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
-    var computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
+    
+    
 
-
+//When a key is pressed
 $(document).on("keyUp", function(event){
+    //computer picks a letter
+    var computerChoice = alphabet[Math.floor(Math.random() * alphabet.length)];
+    //translates to lowercase
     var userguess = eventKey.toLowerCase;
-    if(userguess === compterChoice){
-        wins++;
-    
+
+    var choice = "";
+
+    $("#guesses")
+
+    if (computerChoice === userguess) {
+        numWins++;
+    } else {
+        numLives = numLives - 1;
+            if (numLives<= 0) {
+                alert("YOU LOST");
+            }
+    }    
+    });
+
+
     
 
-});
-    
-}
 
   
   
