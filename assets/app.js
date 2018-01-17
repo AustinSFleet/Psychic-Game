@@ -74,7 +74,7 @@ $(".newGame").click(function() {
             $(".wins").html(wins);
             newGame();
         } else if (lives === 0) {
-            alert("you ran outta lives buckaroo. Click OK to try again");
+            alert("you ran outta lives buckaroo. I was thinking of " + randoLet.toUpperCase() + ". Click OK to try again");
             losses++;
             $(".losses").html(losses);
             newGame();
