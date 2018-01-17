@@ -1,0 +1,30 @@
+ul {
+    list-style: none;
+}
+
+body {
+    background:url("photos/psychic.jpg");
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 125%;
+    text-shadow: 1,1,1;
+}
+
+h1 {
+    font-size: 425%;
+}
+
+#instructions {
+    background-color: rgba(0, 0, 0, 0.432);
+    padding-bottom:25px;
+    width:-45px;
+}
+
+p {
+    font-size: 35px;
+}
+
+.shadowBackground {
+    background-color: rgba(0, 0, 0, 0.61);
+    margin-right: 5%;
+}
