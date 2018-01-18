@@ -32,7 +32,7 @@ function newGame () {
     $(".guesses").html(guessed);
     $(".lives").html(lives);
     randoLet = alphabet[Math.floor(Math.random() * 26)];
-    console.log(randoLet);
+    console.log("The Letter to guess is: " + randoLet.toUpperCase());
     
 };
 
