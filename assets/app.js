@@ -32,6 +32,7 @@ function newGame () {
     $(".guesses").html(guessed);
     $(".lives").html(lives);
     randoLet = alphabet[Math.floor(Math.random() * 26)];
+    console.log(randoLet);
     
 };
 
@@ -73,14 +74,14 @@ $(".newGame").click(function() {
             wins++;
             $(".wins").html(wins);
             newGame();
-        } else if (lives === 0) {
+        } else if (lives > 1) {
+            lives--;
+            $(".lives").html(lives);
+        } else if (lives <= 1){
             alert("you ran outta lives buckaroo. I was thinking of " + randoLet.toUpperCase() + ". Click OK to try again");
             losses++;
             $(".losses").html(losses);
             newGame();
-        } else {
-            lives--;
-            $(".lives").html(lives);
         }
        
     });
