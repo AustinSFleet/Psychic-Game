@@ -54,11 +54,7 @@ $(".newGame").click(function() {
 
         var regex=/^[a-zA-Z]+$/;
 
-        if (!letterGuess.match(regex))
-        {
-            alert("You need to press a letter key!");
-            return false;
-        }
+       
 
         
 
