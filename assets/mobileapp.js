@@ -32,7 +32,9 @@ function newGame () {
     $(".guesses").html(guessed);
     $(".lives").html(lives);
     randoLet = alphabet[Math.floor(Math.random() * 26)];
+    $("input").val("")
     console.log(randoLet);
+
     
 };
 
@@ -54,7 +56,11 @@ $(".newGame").click(function() {
 
         var regex=/^[a-zA-Z]+$/;
 
-       
+        if (!letterGuess.match(regex))
+        {
+            alert("You need to press a letter key!");
+            return false;
+        }
 
         
 
